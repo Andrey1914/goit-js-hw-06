@@ -1,9 +1,25 @@
-const categoriesItem = document.querySelectorAll('item');
+// Напиши скрипт который:
 
-console.log(categoriesItem);
+// Посчитает и выведет в консоль количество категорий в ul#categories, то есть элементов li.item.
+// Для каждого элемента li.item в списке ul#categories, найдет и выведет в консоль текст заголовка элемента (тега <h2>) и количество элементов в категории (всех вложенных в него <li>).
+// В результате, в консоли будут выведены такие сообщения.
 
-const categoriesTitle = document.querySelectorAll('title');
+// Number of categories: 3
 
-console.log(categoriesTitle);
+// Category: Animals
+// Elements: 4
 
+// Category: Products
+// Elements: 3
 
+// Category: Technologies
+// Elements: 5
+const ulCategories = document.querySelectorAll("li.item").length;
+console.log(`Number of categories: ${ulCategories}`);
+
+const liItemTitle = document.querySelector("h2");
+console.log(`Category: ${liItemTitle.textContent}`);
+
+const liItem = document.querySelector(".item");
+const lastEl = liItem.children;
+console.log(`Elements: ${lastEl}`);
