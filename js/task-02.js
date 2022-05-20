@@ -14,14 +14,42 @@ const ingredients = [
   "Condiments",
 ];
 
-const ulIngredients = document.querySelector(".ingredients");
-const liItem = document.createElement("li");
-liItem.textContent = "Potatoes";
-liItem.classList.add("item");
-ulIngredients.append(liItem);
+const firstItem = document.createElement("li");
+firstItem.textContent = "Potatoes";
+firstItem.classList.add("item");
+console.log(firstItem);
 
-// console.log(liItem);
+const secondItem = document.createElement("li");
+secondItem.textContent = "Mushrooms";
+secondItem.classList.add("item");
+console.log(secondItem);
 
-// const ulIngredients = document.querySelector(".ingredients");
+const thirdItem = document.createElement("li");
+thirdItem.textContent = "Garlic";
+thirdItem.classList.add("item");
+console.log(thirdItem);
 
-// ulIngredients.appendChild(liItem);
+const fourthItem = document.createElement("li");
+fourthItem.textContent = "Tomatos";
+fourthItem.classList.add("item");
+console.log(fourthItem);
+
+const fifthItem = document.createElement("li");
+fifthItem.textContent = "Herbs";
+fifthItem.classList.add("item");
+console.log(fifthItem);
+
+const sixthItem = document.createElement("li");
+sixthItem.textContent = "Condiments";
+sixthItem.classList.add("item");
+console.log(sixthItem);
+
+const ulIngredients = document.querySelector("#ingredients");
+ulIngredients.append(
+  firstItem,
+  secondItem,
+  thirdItem,
+  fourthItem,
+  fifthItem,
+  sixthItem
+);
