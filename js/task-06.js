@@ -6,20 +6,17 @@
 // Для добавления стилей, используй CSS - классы valid и invalid,
 // которые мы уже добавили в исходные файлы задания.
 
-const textInput = document.querySelector("text");
-const lenthInput = document.querySelector('[data-lenght="6"]');
+const textInput = document.querySelector("#validation-input");
+textInput.addEventListener("blur", lostFocus);
 
-function inputValid() {
-  textInput === lenthInput;
+function lostFocus(event) {
+  const inputCurrent = event.currentTarget;
+  const inputLength = Number(inputCurrent.dataset.length);
+  if (inputCurrent.value.length === inputLength) {
+    inputCurrent.classList.remove("invalid");
+    inputCurrent.classList.add("valid");
+  } else {
+    inputCurrent.classList.remove("valid");
+    inputCurrent.classList.add("invalid");
+  }
 }
-
-function onInputBlur() {
-  textInput !== lenthInput;
-}
-
-// textInput.addEventListener("blur", (event) => {
-//   if (textInput.event === focusBtn) {
-//     inputValidation.valid.event;
-//   }
-//   inputValidation.invalid.event;
-// });
