@@ -1,0 +1,32 @@
+ul {
+  padding: 0;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .list {
+    flex-direction: column;
+    height: 102px;
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .list {
+    height: 135px;
+  }
+}
+
+.item {
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 1536px) {
+  .item {
+    font-size: 36px;
+  }
+}
