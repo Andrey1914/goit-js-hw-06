@@ -1,0 +1,26 @@
+body {
+  background-image: url("../images/bg-task-04.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.box {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .box {
+    width: 400px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.text-input {
+  outline: none;
+  border: none;
+}

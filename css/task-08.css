@@ -1,0 +1,32 @@
+body {
+  background-image: url("../images/bg-task-04.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.box {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .box {
+    width: 400px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.form-btn {
+  font-size: 20px;
+  background-color: rgb(80, 144, 255);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.form-btn:hover :focus {
+  background-color: rgb(61, 61, 219);
+}

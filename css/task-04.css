@@ -1,0 +1,35 @@
+body {
+  background-image: url("../images/bg-task-04.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.counter {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  font-family: "Raleway";
+  font-size: 20px;
+  font-weight: 700;
+  width: 60px;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(80, 144, 255);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.btn:hover :focus {
+  background-color: rgb(61, 61, 219);
+}
+
+.number {
+  font-family: "Raleway";
+  font-size: 20px;
+  font-weight: 700;
+}

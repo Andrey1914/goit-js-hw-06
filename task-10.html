@@ -6,17 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task 10 (optional)</title>
     <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/task-10.css" />
   </head>
   <body>
-    <p><a href="index.html">Go back</a></p>
-
-    <div id="controls">
-      <input type="number" min="1" max="100" step="1" />
-      <button type="button" data-create>Create</button>
-      <button type="button" data-destroy>Destroy</button>
+    <div class="container">
+      <p class="back">
+        <a class="link-back" href="index.html">&#11164;Go back</a>
+      </p>
+    </div>
+    <div class="box" id="controls">
+      <input class="input-number" type="number" min="1" max="100" step="1" />
+      <button class="btn btn--create" type="button" data-create>Create</button>
+      <button class="btn btn--destroy" type="button" data-destroy>
+        Destroy
+      </button>
     </div>
 
-    <div id="boxes"></div>
+    <div class="colors" id="boxes"></div>
 
     <script src="js/task-10.js" type="module"></script>
   </body>
